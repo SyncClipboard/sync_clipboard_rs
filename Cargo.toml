@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "clipboard_core",
+    "server",
+    "cli",
+    "desktop"
+]
+resolver = "2"

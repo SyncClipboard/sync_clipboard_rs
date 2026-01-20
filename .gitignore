@@ -1,0 +1,54 @@
+# Rust
+/target
+/debug
+/release
+**/*.rs.bk
+
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# UI Build
+/ui/dist
+/ui_legacy
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Env
+.env
+.env.*
+!.env.example
+build*.sh
+deploy*.sh
+**/scripts
+# Tauri
+/desktop/src-tauri/target
+
+# Build artifacts
+*.deb
+*.rpm
+*.apk
+
+# Runtime files
+**/uploads
+**/logs
+*.log
+!npm-debug.log
+!yarn-error.log
+!pnpm-debug.log
+
+# IDE
+*.iml

@@ -1,0 +1,185 @@
+Build - Linux	Set up job	﻿2026-01-20T03:12:50.1999494Z Current runner version: '2.331.0'
+Build - Linux	Set up job	2026-01-20T03:12:50.2027134Z ##[group]Runner Image Provisioner
+Build - Linux	Set up job	2026-01-20T03:12:50.2027921Z Hosted Compute Agent
+Build - Linux	Set up job	2026-01-20T03:12:50.2028596Z Version: 20251211.462
+Build - Linux	Set up job	2026-01-20T03:12:50.2029191Z Commit: 6cbad8c2bb55d58165063d031ccabf57e2d2db61
+Build - Linux	Set up job	2026-01-20T03:12:50.2029874Z Build Date: 2025-12-11T16:28:49Z
+Build - Linux	Set up job	2026-01-20T03:12:50.2030545Z Worker ID: {793f5336-42b8-437d-bba5-908c1caa4da2}
+Build - Linux	Set up job	2026-01-20T03:12:50.2031254Z ##[endgroup]
+Build - Linux	Set up job	2026-01-20T03:12:50.2031760Z ##[group]Operating System
+Build - Linux	Set up job	2026-01-20T03:12:50.2032352Z Ubuntu
+Build - Linux	Set up job	2026-01-20T03:12:50.2032820Z 24.04.3
+Build - Linux	Set up job	2026-01-20T03:12:50.2033227Z LTS
+Build - Linux	Set up job	2026-01-20T03:12:50.2033768Z ##[endgroup]
+Build - Linux	Set up job	2026-01-20T03:12:50.2034260Z ##[group]Runner Image
+Build - Linux	Set up job	2026-01-20T03:12:50.2034794Z Image: ubuntu-24.04
+Build - Linux	Set up job	2026-01-20T03:12:50.2035302Z Version: 20260111.209.1
+Build - Linux	Set up job	2026-01-20T03:12:50.2036324Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260111.209/images/ubuntu/Ubuntu2404-Readme.md
+Build - Linux	Set up job	2026-01-20T03:12:50.2037868Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260111.209
+Build - Linux	Set up job	2026-01-20T03:12:50.2039113Z ##[endgroup]
+Build - Linux	Set up job	2026-01-20T03:12:50.2040250Z ##[group]GITHUB_TOKEN Permissions
+Build - Linux	Set up job	2026-01-20T03:12:50.2042289Z Contents: read
+Build - Linux	Set up job	2026-01-20T03:12:50.2042839Z Metadata: read
+Build - Linux	Set up job	2026-01-20T03:12:50.2043418Z Packages: read
+Build - Linux	Set up job	2026-01-20T03:12:50.2043921Z ##[endgroup]
+Build - Linux	Set up job	2026-01-20T03:12:50.2045942Z Secret source: Actions
+Build - Linux	Set up job	2026-01-20T03:12:50.2047274Z Prepare workflow directory
+Build - Linux	Set up job	2026-01-20T03:12:50.2432407Z Prepare all required actions
+Build - Linux	Set up job	2026-01-20T03:12:50.2469819Z Getting action download info
+Build - Linux	Set up job	2026-01-20T03:12:50.6101642Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Build - Linux	Set up job	2026-01-20T03:12:50.7041955Z Download action repository 'dtolnay/rust-toolchain@stable' (SHA:4be9e76fd7c4901c61fb841f559994984270fce7)
+Build - Linux	Set up job	2026-01-20T03:12:50.9817689Z Download action repository 'Swatinem/rust-cache@v2' (SHA:779680da715d629ac1d338a641029a2f4372abb5)
+Build - Linux	Set up job	2026-01-20T03:12:51.3959594Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Build - Linux	Set up job	2026-01-20T03:12:51.6300285Z Complete job name: Build - Linux
+Build - Linux	Run actions/checkout@v4	﻿2026-01-20T03:12:51.7037665Z ##[group]Run actions/checkout@v4
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7038693Z with:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7039231Z   repository: SyncClipboard/sync_clipboard_rs
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7040018Z   token: ***
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7040455Z   ssh-strict: true
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7040896Z   ssh-user: git
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7041349Z   persist-credentials: true
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7041907Z   clean: true
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7042364Z   sparse-checkout-cone-mode: true
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7042902Z   fetch-depth: 1
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7043339Z   fetch-tags: false
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7043786Z   show-progress: true
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7044239Z   lfs: false
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7044673Z   submodules: false
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7045125Z   set-safe-directory: true
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7045848Z env:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7046277Z   CARGO_TERM_COLOR: always
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.7046771Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8117609Z Syncing repository: SyncClipboard/sync_clipboard_rs
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8119582Z ##[group]Getting Git version info
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8120552Z Working directory is '/home/runner/work/sync_clipboard_rs/sync_clipboard_rs'
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8121958Z [command]/usr/bin/git version
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8201331Z git version 2.52.0
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8227776Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8248105Z Temporarily overriding HOME='/home/runner/work/_temp/a9ad38d3-4096-45c1-8dc3-794eca5e6daa' before making global git config changes
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8253402Z Adding repository directory to the temporary git global config as a safe directory
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8254799Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sync_clipboard_rs/sync_clipboard_rs
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8292220Z Deleting the contents of '/home/runner/work/sync_clipboard_rs/sync_clipboard_rs'
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8295654Z ##[group]Initializing the repository
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8300325Z [command]/usr/bin/git init /home/runner/work/sync_clipboard_rs/sync_clipboard_rs
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8401788Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8403515Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8404553Z hint: to use in all of your new repositories, which will suppress this warning,
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8406077Z hint: call:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8406653Z hint:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8407627Z hint: 	git config --global init.defaultBranch <name>
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8408910Z hint:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8410106Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8412086Z hint: 'development'. The just-created branch can be renamed via this command:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8413665Z hint:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8414455Z hint: 	git branch -m <name>
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8415372Z hint:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8416544Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8419102Z Initialized empty Git repository in /home/runner/work/sync_clipboard_rs/sync_clipboard_rs/.git/
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8422728Z [command]/usr/bin/git remote add origin https://github.com/SyncClipboard/sync_clipboard_rs
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8454973Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8456403Z ##[group]Disabling automatic garbage collection
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8459938Z [command]/usr/bin/git config --local gc.auto 0
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8488717Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8490206Z ##[group]Setting up auth
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8496299Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8527630Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8868732Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.8898793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.9113037Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.9144293Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.9363188Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.9396304Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.9397427Z ##[group]Fetching the repository
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:51.9404703Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a4fabaa039c0c1f375c11a6cb14f6fe62a5dc7b5:refs/remotes/origin/main
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2691687Z From https://github.com/SyncClipboard/sync_clipboard_rs
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2693328Z  * [new ref]         a4fabaa039c0c1f375c11a6cb14f6fe62a5dc7b5 -> origin/main
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2725444Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2727606Z ##[group]Determining the checkout info
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2729084Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2732731Z [command]/usr/bin/git sparse-checkout disable
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2773616Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2800234Z ##[group]Checking out the ref
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2803852Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2928719Z Switched to a new branch 'main'
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2932258Z branch 'main' set up to track 'origin/main'.
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2939911Z ##[endgroup]
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2971266Z [command]/usr/bin/git log -1 --format=%H
+Build - Linux	Run actions/checkout@v4	2026-01-20T03:12:52.2993482Z a4fabaa039c0c1f375c11a6cb14f6fe62a5dc7b5
+Build - Linux	Install dependencies (Linux)	﻿2026-01-20T03:12:52.3219171Z ##[group]Run sudo apt-get update
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3220395Z [36;1msudo apt-get update[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3221866Z [36;1msudo apt-get install -y libwebkit2gtk-4.0-dev \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3223285Z [36;1m    build-essential \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3224330Z [36;1m    curl \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3225198Z [36;1m    wget \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3226068Z [36;1m    file \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3227110Z [36;1m    libssl-dev \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3228108Z [36;1m    libgtk-3-dev \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3229232Z [36;1m    libayatana-appindicator3-dev \[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3230477Z [36;1m    librsvg2-dev[0m
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3267778Z shell: /usr/bin/bash -e {0}
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3268837Z env:
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3269632Z   CARGO_TERM_COLOR: always
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.3270871Z ##[endgroup]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4034286Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4339995Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4345488Z Get:6 https://packages.microsoft.com/repos/azure-cli noble InRelease [3564 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4362286Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4390148Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4400831Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.4438347Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.5616304Z Get:8 https://packages.microsoft.com/repos/azure-cli noble/main amd64 Packages [1948 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6071233Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1697 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6177361Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [314 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6201747Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6230180Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [16.0 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6242074Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1515 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6318279Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [308 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6343365Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6372785Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.5 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6381362Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2426 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6520367Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [554 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6573273Z Get:21 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [11.4 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6645059Z Get:22 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [62.3 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6702162Z Get:23 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [80.8 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.6977332Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7043571Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7101162Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7312 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7125792Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7149977Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7159187Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7689150Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1408 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7759588Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [229 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7779459Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7796219Z Get:31 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9772 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7805124Z Get:32 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [924 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7850421Z Get:33 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [209 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7867475Z Get:34 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.7879018Z Get:35 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [19.7 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.8316732Z Get:36 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2302 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.8451736Z Get:37 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [527 kB]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.8493344Z Get:38 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:12:52.8503412Z Get:39 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:01.4159966Z Fetched 13.7 MB in 2s (8566 kB/s)
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.1488928Z Reading package lists...
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.1808060Z Reading package lists...
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.3670653Z Building dependency tree...
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.3679284Z Reading state information...
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.4944687Z E: Unable to locate package libwebkit2gtk-4.0-dev
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.4945656Z E: Couldn't find any package by glob 'libwebkit2gtk-4.0-dev'
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.4946183Z E: Couldn't find any package by regex 'libwebkit2gtk-4.0-dev'
+Build - Linux	Install dependencies (Linux)	2026-01-20T03:13:02.4978257Z ##[error]Process completed with exit code 100.
+Build - Linux	Post Run actions/checkout@v4	﻿2026-01-20T03:13:02.5106672Z Post job cleanup.
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6026673Z [command]/usr/bin/git version
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6062190Z git version 2.52.0
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6105234Z Temporarily overriding HOME='/home/runner/work/_temp/98b79b08-e63c-48bb-b977-06718f18f640' before making global git config changes
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6106126Z Adding repository directory to the temporary git global config as a safe directory
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6117418Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sync_clipboard_rs/sync_clipboard_rs
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6149847Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6180944Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6403565Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6422982Z http.https://github.com/.extraheader
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6435352Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6464600Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6680774Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build - Linux	Post Run actions/checkout@v4	2026-01-20T03:13:02.6709976Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build - Linux	Complete job	﻿2026-01-20T03:13:02.7046262Z Cleaning up orphan processes

@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.tauri.app/config/2",
+    "productName": "sync-clipboard-rs",
+    "version": "0.1.0",
+    "identifier": "com.syncclipboard.rs",
+    "build": {
+        "beforeDevCommand": "",
+        "beforeBuildCommand": "",
+        "devUrl": "http://localhost:1420",
+        "frontendDist": "../ui/dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "SyncClipboard",
+                "width": 800,
+                "height": 600,
+                "visible": true,
+                "hiddenTitle": false,
+                "decorations": true
+            }
+        ],
+        "security": {
+            "csp": null
+        },
+        "trayIcon": {
+            "iconPath": "icons/icon.png",
+            "iconAsTemplate": false
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": [
+            "deb",
+            "rpm",
+            "dmg",
+            "msi",
+            "nsis"
+        ],
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ],
+        "linux": {
+            "appimage": {
+                "bundleMediaFramework": false
+            }
+        },
+        "resources": []
+    }
+}
