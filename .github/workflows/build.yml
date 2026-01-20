@@ -22,7 +22,7 @@ jobs:
           - { name: macOS, os: macos-latest }
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Install dependencies (Linux)
       if: runner.os == 'Linux'
@@ -59,7 +59,7 @@ jobs:
           - { name: macOS, os: macos-latest }
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Install dependencies (Linux)
       if: runner.os == 'Linux'
@@ -86,7 +86,7 @@ jobs:
 
     # Desktop (Tauri) check
     - name: Install Node.js (for Tauri)
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
         node-version: 20
 
