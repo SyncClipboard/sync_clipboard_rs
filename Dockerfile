@@ -1,5 +1,5 @@
 # Base stage for cargo-chef
-FROM rust:1.92-alpine AS chef
+FROM rust:1.93-alpine AS chef
 RUN apk add --no-cache musl-dev gcc pkgconfig openssl-dev libx11-dev libxext-dev libxi-dev libxtst-dev libxrandr-dev libxcursor-dev libxcomposite-dev libxdamage-dev
 RUN cargo install cargo-chef
 WORKDIR /app
