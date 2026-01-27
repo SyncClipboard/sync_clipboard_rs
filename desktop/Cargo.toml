@@ -17,7 +17,7 @@ serde_json = "1.0"
 clipboard_core = { path = "../clipboard_core" }
 server = { path = "../server" }
 tokio = { version = "1", features = ["full"] }
-uuid = "1.19.0"
+uuid = "1.20.0"
 image = "0.25.9"
 tracing = "0.1"
 tracing-subscriber = "0.3"
