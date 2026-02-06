@@ -11,19 +11,19 @@ path = "src/main.rs"
 tauri-build = { version = "2.0", features = [] }
 
 [dependencies]
-tauri = { version = "2.9.5", features = ["tray-icon"] }
+tauri = { version = "2.10.2", features = ["tray-icon"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 clipboard_core = { path = "../clipboard_core" }
 server = { path = "../server" }
 tokio = { version = "1", features = ["full"] }
-uuid = "1.19.0"
+uuid = "1.20.0"
 image = "0.25.9"
 tracing = "0.1"
 tracing-subscriber = "0.3"
 tracing-appender = "0.2"
 rusqlite = { version = "0.38.0", features = ["bundled"] }
-local-ip-address = "0.6.9"
+local-ip-address = "0.6.10"
 hostname = "0.4.2"
 mdns-sd = "0.17.1"
 reqwest = { version = "0.13", features = ["json"] }
